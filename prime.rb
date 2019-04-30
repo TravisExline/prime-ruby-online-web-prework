@@ -5,7 +5,7 @@ def prime?(number)
     return false
   else
     (2..number-1).to_a.all? do |possible_number|
-      number % numbers != 0
+      number % possible_number != 0
     end
   end
 end
